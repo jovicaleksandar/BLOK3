@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!-- Magic, The User Interface library for .NET (www.dotnetmagic.com) -->
+<!-- Modifying this generated file will probably render it invalid -->
+<DockingConfig FormatVersion="5" InsideFill="False" InnerMinimum="20, 20">
+  <Content Name="Log Explorer" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="290, 300" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="Log Explorer">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Log Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="Log Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Log Explorer" />
+      <State Value="DockRight" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="4">
+        <Item Name="Log Explorer" />
+        <Item Name="Query Manager" />
+        <Item Name="CIM Data Explorer" />
+        <Item Name="Profile Explorer" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Log Explorer" />
+        <Space Value="100" />
+        <Best Count="4">
+          <Item Name="Profile Explorer" />
+          <Item Name="CIM Data Explorer" />
+          <Item Name="Query Manager" />
+          <Item Name="Log Explorer" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Log Explorer" />
+          <Next Count="0" />
+          <Previous Count="3">
+            <Item Name="Profile Explorer" />
+            <Item Name="CIM Data Explorer" />
+            <Item Name="Query Manager" />
+          </Previous>
+          <Selected Value="False" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Log Explorer" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Query Manager" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="290, 300" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="Query Manager">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Query Manager" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="Query Manager" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Query Manager" />
+      <State Value="DockRight" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="3">
+        <Item Name="Query Manager" />
+        <Item Name="CIM Data Explorer" />
+        <Item Name="Profile Explorer" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Query Manager" />
+        <Space Value="100" />
+        <Best Count="3">
+          <Item Name="Profile Explorer" />
+          <Item Name="CIM Data Explorer" />
+          <Item Name="Query Manager" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Query Manager" />
+          <Next Count="0" />
+          <Previous Count="2">
+            <Item Name="Profile Explorer" />
+            <Item Name="CIM Data Explorer" />
+          </Previous>
+          <Selected Value="False" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Query Manager" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="CIM Data Explorer" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="290, 300" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="CIM Data Explorer">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="CIM Data Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="CIM Data Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="CIM Data Explorer" />
+      <State Value="DockRight" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="2">
+        <Item Name="CIM Data Explorer" />
+        <Item Name="Profile Explorer" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="CIM Data Explorer" />
+        <Space Value="100" />
+        <Best Count="2">
+          <Item Name="Profile Explorer" />
+          <Item Name="CIM Data Explorer" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="CIM Data Explorer" />
+          <Next Count="0" />
+          <Previous Count="1">
+            <Item Name="Profile Explorer" />
+          </Previous>
+          <Selected Value="False" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="CIM Data Explorer" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Profile Explorer" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="290, 300" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="Profile Explorer">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Profile Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="Profile Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Profile Explorer" />
+      <State Value="DockRight" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Profile Explorer" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="1">
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Profile Explorer" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Profile Explorer" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Profile Explorer" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Profile Explorer" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Workspace Explorer" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="290, 300" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="Workspace Explorer">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Workspace Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="Workspace Explorer" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Workspace Explorer" />
+      <State Value="DockLeft" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Workspace Explorer" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Workspace Explorer" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Workspace Explorer" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Workspace Explorer" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Workspace Explorer" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Validation" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="150, 150" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="500, 400" FullTitle="Validation">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Validation" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Validation" />
+      <State Value="DockBottom" />
+      <Next Count="1">
+        <Item Name="Output" />
+      </Next>
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Validation" />
+      <State Value="DockBottom" />
+      <Position Size="500, 300" Location="150, 150" />
+      <Best Count="2">
+        <Item Name="Output" />
+        <Item Name="Validation" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="5">
+        <Item Name="Profile Explorer" />
+        <Item Name="CIM Data Explorer" />
+        <Item Name="Query Manager" />
+        <Item Name="Log Explorer" />
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Validation" />
+        <Space Value="100" />
+        <Best Count="2">
+          <Item Name="Validation" />
+          <Item Name="Output" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Validation" />
+          <Next Count="1">
+            <Item Name="Output" />
+          </Next>
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Validation" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+  <Content Name="Output" Visible="True" Docked="True" AutoHidden="True" CaptionBar="True" CloseButton="True" DisplaySize="150, 150" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="350, 600" FullTitle="Output">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Output" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideAffinity">
+      <Content Name="Output" />
+      <State Value="DockBottom" />
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="Output" />
+      <State Value="DockBottom" />
+      <Position Size="290, 300" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="Output" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="5">
+        <Item Name="Profile Explorer" />
+        <Item Name="CIM Data Explorer" />
+        <Item Name="Query Manager" />
+        <Item Name="Log Explorer" />
+        <Item Name="Workspace Explorer" />
+      </NextAll>
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="Output" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="Output" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="Output" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="Output" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+</DockingConfig>

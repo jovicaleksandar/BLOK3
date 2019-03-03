@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15" xmlns:tdms="http://web.telventdms.com/CIM15/2010/extension#" xmlns:dong="http://web.telventdms.com/CIM15/DONG/extension#" xmlns:dm="http://iec.ch/2002/schema/CIM_difference_model#">
+		<!-- 
+		README:	Patch Example 4 (patch_1_extract_1-WO_0001.xml)
+		- affecting feeder _BRT35
+		- changes are made on feeder _BRT35
+		- patch will delete line UndergroundElectricLineSegment.6821136, add two new lines and new station betwen them
+		- deleted equipment:
+			- ACLineSegment rdf:ID="_UndergroundElectricLineSegment.6821136"
+			- Terminal rdf:ID="_UndergroundElectricLineSegment.6821136.T.1"
+			- Terminal rdf:ID="_UndergroundElectricLineSegment.6821136.T.2"
+		-insert:
+			~ 2 new ACLineSegment
+			~ MV/LV substation
+	-->
+		
+	<!-- feeder declaration is needed because it is being referenced from the <DifferenceModel.affectedFeeders> element -->
+	<cim:IdentifiedObject rdf:ID="_BRT35">
+		<cim:IdentifiedObject.mRID>BRT35</cim:IdentifiedObject.mRID>
+	</cim:IdentifiedObject>
+	
+	<dm:DifferenceModel>
+		<dm:Model.Ontology>
+			<cim:IEC61970CIMVersion>
+				<cim:IEC61970CIMVersion.version>CIM15v0</cim:IEC61970CIMVersion.version>
+				<cim:IEC61970CIMVersion.date>2010-09-15</cim:IEC61970CIMVersion.date>
+			</cim:IEC61970CIMVersion>
+		</dm:Model.Ontology>
+		<dm:Model.Version>
+			<dm:Description>
+				<dm:Description.name>Network Patch</dm:Description.name>
+				<dm:Description.alias>Patch_Extract</dm:Description.alias>
+				<dm:Description.description>Network Patch extract</dm:Description.description>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.Version>
+		<dm:Model.ModelingAuthoritySet>
+			<dm:Description>
+				<dm:Description.name>DONG Energy</dm:Description.name>
+				<dm:Description.alias>DONG</dm:Description.alias>
+			</dm:Description>
+		</dm:Model.ModelingAuthoritySet>
+		<dm:Model.Creator>
+			<dm:Description>
+				<dm:Description.name>J.D.</dm:Description.name>
+			</dm:Description>
+		</dm:Model.Creator>
+		<dm:Model.Profile>
+			<dm:Description>
+				<dm:Description.name>IEC 61970-552</dm:Description.name>
+				<dm:Description.description>Network Patch</dm:Description.description>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.Profile>
+		<dm:Model.ProfileDataGroup>
+			<dm:Description>
+				<dm:Description.name>Integration models</dm:Description.name>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.ProfileDataGroup>
+		
+		<dong:DifferenceModel.affectedFeeders rdf:resource="_BRT35"/>
+		
+		<dong:DifferenceModel.patchID>1</dong:DifferenceModel.patchID>
+		<dong:DifferenceModel.woNumber>001</dong:DifferenceModel.woNumber>
+		<dong:DifferenceModel.username>JDOE</dong:DifferenceModel.username>
+		<dong:DifferenceModel.title>Patch Example: construction</dong:DifferenceModel.title>
+		
+		<dm:Model.created>2013-06-26</dm:Model.created>
+		
+		<dm:reverseDifferences parseType="Statements">
+			<!-- list of DELETED objects -->		
+			<cim:ACLineSegment rdf:ID="_UndergroundElectricLineSegment.6821136"/>
+			<cim:Location rdf:ID="_UndergroundElectricLineSegment.6821136.L"/>
+			<cim:CoordinateSystem rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.1"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.2"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.3"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.4"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.5"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.6"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.7"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.8"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.9"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.10"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.11"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.12"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.13"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.14"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.15"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.16"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.17"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.18"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.19"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.20"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.21"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.22"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.23"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.24"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.25"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.26"/>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.6821136.L.CS.PP.27"/>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.6821136.T.1"/>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.6821136.T.2"/>
+			
+			<!-- UPDATED object properties (declaring previous value) -->
+			
+		</dm:reverseDifferences>
+		
+		<dm:forwardDifferences parseType="Statements">
+			<!-- UPDATED object properties declaring new values -->
+			
+			<!-- list of INSERTED objects -->
+			<cim:ACLineSegment rdf:ID="_UndergroundElectricLineSegment.68211361">
+				<cim:IdentifiedObject.description>52611-53601-41</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211361</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>52611-53601-41</dong:IdentifiedObject.name>
+				<dong:PowerSystemResource.doc3>52611-53601-41</dong:PowerSystemResource.doc3>
+				<cim:PowerSystemResource.Location rdf:resource="#_UndergroundElectricLineSegment.68211361.L"/>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.productionDate>1970-01-01</dong:Equipment.productionDate>
+				<dong:Equipment.standardTypeLibrary>CABLE_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_BRT_10_35_S0001"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>12000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<cim:Conductor.length>75</cim:Conductor.length>
+				<tdms:Conductor.crossSection>95</tdms:Conductor.crossSection>
+				<tdms:Conductor.conductorType>Cable</tdms:Conductor.conductorType>
+				<tdms:Conductor.conductorMaterial>copper</tdms:Conductor.conductorMaterial>
+				<dong:ACLineSegment.allowedTemperature>60</dong:ACLineSegment.allowedTemperature>
+				<cim:ACLineSegment.b0ch>0.000113097336</cim:ACLineSegment.b0ch>
+				<cim:ACLineSegment.bch>5.6548668E-05</cim:ACLineSegment.bch>
+				<dong:ACLineSegment.conductorTypeDONG>Cable</dong:ACLineSegment.conductorTypeDONG>
+				<dong:ACLineSegment.isolationType>APB</dong:ACLineSegment.isolationType>
+				<tdms:ACLineSegment.neutral>false</tdms:ACLineSegment.neutral>
+				<cim:ACLineSegment.r>0.195</cim:ACLineSegment.r>
+				<cim:ACLineSegment.r0>0.195</cim:ACLineSegment.r0>
+				<tdms:ACLineSegment.ratedCurrent>260</tdms:ACLineSegment.ratedCurrent>
+				<tdms:ACLineSegment.reducedCapacity>100</tdms:ACLineSegment.reducedCapacity>
+				<cim:ACLineSegment.x>0.079</cim:ACLineSegment.x>
+				<cim:ACLineSegment.x0>0.079</cim:ACLineSegment.x0>
+			</cim:ACLineSegment>
+			<cim:Location rdf:ID="_UndergroundElectricLineSegment.68211361.L">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211361.L</cim:IdentifiedObject.mRID>
+			</cim:Location>
+			<cim:CoordinateSystem rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS">
+				<cim:PowerSystemResource.Location rdf:resource="#_UndergroundElectricLineSegment.68211361.L"/>
+				<cim:IdentifiedObject.name>EPSG:29900</cim:IdentifiedObject.name>
+			</cim:CoordinateSystem>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.0">
+				<cim:PositionPoint.sequenceNumber>0</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718698.12006415043</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177538.3513107225</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.1">
+				<cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718703.92983133032</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177514.0270463116</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.2">
+				<cim:PositionPoint.sequenceNumber>2</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718704.34302190447</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177511.6790703386</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.3">
+				<cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718708.8915734255</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177492.456386107</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.4">
+				<cim:PositionPoint.sequenceNumber>4</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718709.42302334018</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177491.2768567512</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.5">
+				<cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718716.35129962058</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177460</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211361.L.CS.PP.6">
+				<cim:PositionPoint.sequenceNumber>6</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718738</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177466</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211361.L.CS"/>
+			</cim:PositionPoint>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.68211361.T.1">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211361.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_UndergroundElectricLineSegment.68211361"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.87590711"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.68211361.T.2">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211361.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_UndergroundElectricLineSegment.68211361"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.875907"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:ConnectivityNode rdf:ID="_Node.OpenPoint.87590711">
+				<cim:IdentifiedObject.mRID>Node.OpenPoint.87590711</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			</cim:ConnectivityNode>
+			<cim:ACLineSegment rdf:ID="_UndergroundElectricLineSegment.68211362">
+				<cim:IdentifiedObject.description>52611-53601-42</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211362</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>52611-53601-42</dong:IdentifiedObject.name>
+				<dong:PowerSystemResource.doc3>52611-53601-421</dong:PowerSystemResource.doc3>
+				<cim:PowerSystemResource.Location rdf:resource="#_UndergroundElectricLineSegment.68211362.L"/>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.productionDate>1970-01-01</dong:Equipment.productionDate>
+				<dong:Equipment.standardTypeLibrary>CABLE_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_BRT_10_35_S0001"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>12000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<cim:Conductor.length>73</cim:Conductor.length>
+				<tdms:Conductor.crossSection>95</tdms:Conductor.crossSection>
+				<tdms:Conductor.conductorType>Cable</tdms:Conductor.conductorType>
+				<tdms:Conductor.conductorMaterial>copper</tdms:Conductor.conductorMaterial>
+				<dong:ACLineSegment.allowedTemperature>60</dong:ACLineSegment.allowedTemperature>
+				<cim:ACLineSegment.b0ch>0.000113097336</cim:ACLineSegment.b0ch>
+				<cim:ACLineSegment.bch>5.6548668E-05</cim:ACLineSegment.bch>
+				<dong:ACLineSegment.conductorTypeDONG>Cable</dong:ACLineSegment.conductorTypeDONG>
+				<dong:ACLineSegment.isolationType>APB</dong:ACLineSegment.isolationType>
+				<tdms:ACLineSegment.neutral>false</tdms:ACLineSegment.neutral>
+				<cim:ACLineSegment.r>0.195</cim:ACLineSegment.r>
+				<cim:ACLineSegment.r0>0.195</cim:ACLineSegment.r0>
+				<tdms:ACLineSegment.ratedCurrent>260</tdms:ACLineSegment.ratedCurrent>
+				<tdms:ACLineSegment.reducedCapacity>100</tdms:ACLineSegment.reducedCapacity>
+				<cim:ACLineSegment.x>0.079</cim:ACLineSegment.x>
+				<cim:ACLineSegment.x0>0.079</cim:ACLineSegment.x0>
+			</cim:ACLineSegment>
+			<cim:Location rdf:ID="_UndergroundElectricLineSegment.68211362.L">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211362.L</cim:IdentifiedObject.mRID>
+			</cim:Location>
+			<cim:CoordinateSystem rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS">
+				<cim:PowerSystemResource.Location rdf:resource="#_UndergroundElectricLineSegment.68211362.L"/>
+				<cim:IdentifiedObject.name>EPSG:29900</cim:IdentifiedObject.name>
+			</cim:CoordinateSystem>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.0">
+				<cim:PositionPoint.sequenceNumber>0</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718738</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177466</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.1">
+				<cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718716.35129962058</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177458</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.2">
+				<cim:PositionPoint.sequenceNumber>2</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718721.21108052006</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177440.9365152773</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.3">
+				<cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718726.45191205142</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177420.0303630447</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.4">
+				<cim:PositionPoint.sequenceNumber>4</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.71205159731</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.99053299</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.5">
+				<cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.72339510627</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.94378991</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.6">
+				<cim:PositionPoint.sequenceNumber>6</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.72593761689</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.8953518225</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.7">
+				<cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.72893647559</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.8473700834</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.8">
+				<cim:PositionPoint.sequenceNumber>8</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.723134336</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.7992579592</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.9">
+				<cim:PositionPoint.sequenceNumber>9</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.71778854437</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.7512110276</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.10">
+				<cim:PositionPoint.sequenceNumber>10</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.7041632951</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.703946407</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.11">
+				<cim:PositionPoint.sequenceNumber>11</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.69092920132</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.6588331414</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.12">
+				<cim:PositionPoint.sequenceNumber>12</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718730.6698719979</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177401.61508892</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.13">
+				<cim:PositionPoint.sequenceNumber>13</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.35912098864</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.9416284151</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.14">
+				<cim:PositionPoint.sequenceNumber>14</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.3381289778</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.8979493864</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.15">
+				<cim:PositionPoint.sequenceNumber>15</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.324894884</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.8527709283</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.16">
+				<cim:PositionPoint.sequenceNumber>16</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.31074809411</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.80504996</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.17">
+				<cim:PositionPoint.sequenceNumber>17</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.30488076189</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.7569378354</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.18">
+				<cim:PositionPoint.sequenceNumber>18</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.29855708138</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.7088257112</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.19">
+				<cim:PositionPoint.sequenceNumber>19</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.30155594007</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.6608439712</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.20">
+				<cim:PositionPoint.sequenceNumber>20</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.30461999157</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.6129274247</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.21">
+				<cim:PositionPoint.sequenceNumber>21</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.3143988786</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177396.5661843447</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="_UndergroundElectricLineSegment.68211362.L.CS.PP.22">
+				<cim:PositionPoint.sequenceNumber>22</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718728.75510072138</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177394.6225327551</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_UndergroundElectricLineSegment.68211362.L.CS"/>
+			</cim:PositionPoint>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.68211362.T.1">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211362.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_UndergroundElectricLineSegment.68211362"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.872398"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:Terminal rdf:ID="_UndergroundElectricLineSegment.68211362.T.2">
+				<cim:IdentifiedObject.mRID>UndergroundElectricLineSegment.68211362.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_UndergroundElectricLineSegment.68211362"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.87590712"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:ConnectivityNode rdf:ID="_Node.OpenPoint.87590712">
+				<cim:IdentifiedObject.mRID>Node.OpenPoint.87590712</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			</cim:ConnectivityNode>
+			<cim:Substation rdf:ID="_Station.51512">
+				<cim:IdentifiedObject.description>SKJULHØJ ALLE 2</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>Station.51512</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>51512 SKJULHØJ ALLE 2</dong:IdentifiedObject.name>
+				<dong:PowerSystemResource.doc1>file://DE-PROD.DK/BU/Sales and Distribution/Data/omr8174/ibrug/stik/adgang/1510.tif</dong:PowerSystemResource.doc1>
+				<dong:PowerSystemResource.doc3>51512</dong:PowerSystemResource.doc3>
+				<cim:PowerSystemResource.Location rdf:resource="#_51512.L"/>
+				<tdms:EquipmentContainer.belongsToEquipmentContainer rdf:resource="#_BRT_10_35_S0001"/>
+				<dong:Substation.accessibility>Unknown</dong:Substation.accessibility>
+				<dong:Substation.city>N</dong:Substation.city>
+				<dong:Substation.municipality>101</dong:Substation.municipality>
+				<dong:Substation.networkType>Island</dong:Substation.networkType>
+				<dong:Substation.ownership>DE</dong:Substation.ownership>
+				<dong:Substation.street>SKJULHØJ ALLÉ</dong:Substation.street>
+				<dong:Substation.streetNumber>2</dong:Substation.streetNumber>
+				<dong:Substation.town>Vanløse</dong:Substation.town>
+				<dong:Substation.zipCode>2720</dong:Substation.zipCode>
+				<dong:Substation.typeDesignation>M</dong:Substation.typeDesignation>
+			</cim:Substation>
+			<cim:Location rdf:ID="_51512.L">
+				<cim:IdentifiedObject.mRID>51512.L</cim:IdentifiedObject.mRID>
+			</cim:Location>
+			<cim:CoordinateSystem rdf:ID="_51512.L.CS">
+				<cim:PowerSystemResource.Location rdf:resource="#_51512.L"/>
+				<cim:IdentifiedObject.name>EPSG:29900</cim:IdentifiedObject.name>
+			</cim:CoordinateSystem>
+			<cim:PositionPoint rdf:ID="_51512.L.CS.PP.1">
+				<cim:PositionPoint.sequenceNumber>0</cim:PositionPoint.sequenceNumber>
+				<cim:PositionPoint.rotationAngle>0</cim:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>718738</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6177466</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_51512.L.CS"/>
+			</cim:PositionPoint>
+			
+			  <cim:Disconnector rdf:ID="_HighVoltageSwitch.2036681">
+				<cim:IdentifiedObject.description>51040-53639</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2036681</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>KIRKEBJERG ALLE 49</dong:IdentifiedObject.name>
+				<dong:PowerSystemResource.doc3>53639-51040</dong:PowerSystemResource.doc3>
+				<cim:PowerSystemResource.Location rdf:resource="#_HighVoltageSwitch.2036681.L"/>
+				<dong:Equipment.operationsManager>DE</dong:Equipment.operationsManager>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>HIGHVOLTAGESWITCH_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>10000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:Switch.breakingCurrent>8</tdms:Switch.breakingCurrent>
+				<tdms:Switch.feederID1>BRT_10_35_S0001</tdms:Switch.feederID1>
+				<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+				<tdms:Switch.ratedCurrent>200</tdms:Switch.ratedCurrent>
+				<dong:Switch.shortCircuitIndicator>true</dong:Switch.shortCircuitIndicator>
+				<dong:Switch.switchType>UKENDT</dong:Switch.switchType>
+			  </cim:Disconnector>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.2036681.T.1">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2036681.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.2036681"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.2036681_HighVoltageSwitch.20366811.FaultIndicator"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.2036681.T.2">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2036681.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.2036681"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.87590711"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:ConnectivityNode rdf:ID="_Node.HighVoltageSwitch.2036681_HighVoltageSwitch.20366811.FaultIndicator">
+				<cim:IdentifiedObject.mRID>Node.HighVoltageSwitch.2036681_HighVoltageSwitch.20366811.FaultIndicator</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			  </cim:ConnectivityNode>
+			  <cim:FaultIndicator rdf:ID="_HighVoltageSwitch.20366811.FaultIndicator">
+				<cim:IdentifiedObject.description>KIRKEBJERG ALLE 49</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20366811.FaultIndicator</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>51040-53639</dong:IdentifiedObject.name>
+				<cim:PowerSystemResource.Location rdf:resource="#_HighVoltageSwitch.2036681.L"/>
+				<dong:Equipment.operationsManager>DE</dong:Equipment.operationsManager>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:FaultIndicator.directional>false</tdms:FaultIndicator.directional>
+				<tdms:FaultIndicator.indicatorType>IT_CURRENT</tdms:FaultIndicator.indicatorType>
+				<dong:FaultIndicator.reset>Manual</dong:FaultIndicator.reset>
+			  </cim:FaultIndicator>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.20366811.FaultIndicator.T.1">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20366811.FaultIndicator.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.20366811.FaultIndicator"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.2036681_BusBar.7890721"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.20366811.FaultIndicator.T.2">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20366811.FaultIndicator.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.20366811.FaultIndicator"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.2036681_HighVoltageSwitch.20366811.FaultIndicator"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:ConnectivityNode rdf:ID="_Node.HighVoltageSwitch.2036681_BusBar.7890721">
+				<cim:IdentifiedObject.mRID>Node.HighVoltageSwitch.2036681_BusBar.7890721</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			  </cim:ConnectivityNode>
+			  <cim:ACLineSegment rdf:ID="_BusBar.7890721">
+				<cim:IdentifiedObject.description>53639:1</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>BusBar.7890721</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>53639:1</dong:IdentifiedObject.name>
+				<cim:PowerSystemResource.Location rdf:resource="#_BusBar.7890721.L"/>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>CABLE_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>12000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<cim:Conductor.length>0.2236419</cim:Conductor.length>
+				<tdms:Conductor.conductorType>Cable</tdms:Conductor.conductorType>
+				<tdms:Conductor.conductorMaterial>copper</tdms:Conductor.conductorMaterial>
+				<tdms:ACLineSegment.neutral>false</tdms:ACLineSegment.neutral>
+			  </cim:ACLineSegment>
+			  <cim:Terminal rdf:ID="_BusBar.7890721.T.1">
+				<cim:IdentifiedObject.mRID>BusBar.7890721.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.7890721"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.2036681_BusBar.7890721"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_BusBar.7890721.T.2">
+				<cim:IdentifiedObject.mRID>BusBar.7890721.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.7890721"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.ElecNet_Junctions.2916481"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:ConnectivityNode rdf:ID="_Node.ElecNet_Junctions.2916481">
+				<cim:IdentifiedObject.mRID>Node.ElecNet_Junctions.2916481</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			  </cim:ConnectivityNode>
+			  <cim:ACLineSegment rdf:ID="_BusBar.7939021">
+				<cim:IdentifiedObject.description>53639:1</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>BusBar.7939021</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>53639:1</dong:IdentifiedObject.name>
+				<cim:PowerSystemResource.Location rdf:resource="#_BusBar.7939021.L"/>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>CABLE_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>12000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<cim:Conductor.length>0.223891526</cim:Conductor.length>
+				<tdms:Conductor.conductorType>Cable</tdms:Conductor.conductorType>
+				<tdms:Conductor.conductorMaterial>copper</tdms:Conductor.conductorMaterial>
+				<tdms:ACLineSegment.neutral>false</tdms:ACLineSegment.neutral>
+			  </cim:ACLineSegment>
+			  <cim:Terminal rdf:ID="_BusBar.7939021.T.1">
+				<cim:IdentifiedObject.mRID>BusBar.7939021.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.7939021"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.201873_BusBar.7939021"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_BusBar.7939021.T.2">
+				<cim:IdentifiedObject.mRID>BusBar.7939021.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.7939021"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.ElecNet_Junctions.2916481"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			 <cim:ConnectivityNode rdf:ID="_Node.HighVoltageSwitch.201873_BusBar.7939021">
+				<cim:IdentifiedObject.mRID>Node.HighVoltageSwitch.201873_BusBar.7939021</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			  </cim:ConnectivityNode>
+			  <cim:FaultIndicator rdf:ID="_HighVoltageSwitch.20187311.FaultIndicator">
+				<cim:IdentifiedObject.description>KIRKEBJERG ALLE 31</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20187311.FaultIndicator</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>51979-53639</dong:IdentifiedObject.name>
+				<cim:PowerSystemResource.Location rdf:resource="#_HighVoltageSwitch.2018731.L"/>
+				<dong:Equipment.operationsManager>DE</dong:Equipment.operationsManager>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:FaultIndicator.directional>false</tdms:FaultIndicator.directional>
+				<tdms:FaultIndicator.indicatorType>IT_CURRENT</tdms:FaultIndicator.indicatorType>
+				<dong:FaultIndicator.reset>Manual</dong:FaultIndicator.reset>
+			  </cim:FaultIndicator>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.20187311.FaultIndicator.T.1">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20187311.FaultIndicator.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.20187311.FaultIndicator"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.201873_BusBar.7939021"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.20187311.FaultIndicator.T.2">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.20187311.FaultIndicator.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.20187311.FaultIndicator"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.201873_HighVoltageSwitch.20187311.FaultIndicator"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:ConnectivityNode rdf:ID="_Node.HighVoltageSwitch.201873_HighVoltageSwitch.20187311.FaultIndicator">
+				<cim:IdentifiedObject.mRID>Node.HighVoltageSwitch.201873_HighVoltageSwitch.20187311.FaultIndicator</cim:IdentifiedObject.mRID>
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.51512"/>
+			  </cim:ConnectivityNode>
+			  <cim:Disconnector rdf:ID="_HighVoltageSwitch.2018731">
+				<cim:IdentifiedObject.description>51979-53639</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2018731</cim:IdentifiedObject.mRID>
+				<dong:IdentifiedObject.name>KIRKEBJERG ALLE 31</dong:IdentifiedObject.name>
+				<dong:PowerSystemResource.doc3>53639-51979</dong:PowerSystemResource.doc3>
+				<cim:PowerSystemResource.Location rdf:resource="#_HighVoltageSwitch.2018731.L"/>
+				<dong:Equipment.operationsManager>DE</dong:Equipment.operationsManager>
+				<tdms:Equipment.private>true</tdms:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>HIGHVOLTAGESWITCH_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.51512"/>
+				<tdms:ConductingEquipment.numberOfPhases>3</tdms:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<tdms:ConductingEquipment.ratedVoltage>10000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:Switch.breakingCurrent>8</tdms:Switch.breakingCurrent>
+				<tdms:Switch.feederID1>BRT_10_35_S0001</tdms:Switch.feederID1>
+				<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+				<tdms:Switch.ratedCurrent>200</tdms:Switch.ratedCurrent>
+				<dong:Switch.shortCircuitIndicator>true</dong:Switch.shortCircuitIndicator>
+				<dong:Switch.switchType>UKENDT</dong:Switch.switchType>
+			  </cim:Disconnector>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.2018731.T.1">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2018731.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.2018731"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.HighVoltageSwitch.201873_HighVoltageSwitch.20187311.FaultIndicator"/>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+			  <cim:Terminal rdf:ID="_HighVoltageSwitch.2018731.T.2">
+				<cim:IdentifiedObject.mRID>HighVoltageSwitch.2018731.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_HighVoltageSwitch.2018731"/>
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.OpenPoint.87590712"/>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			  </cim:Terminal>
+		</dm:forwardDifferences>
+	</dm:DifferenceModel>
+</rdf:RDF>

@@ -1,0 +1,200 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="12">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CN_1424" />
+            <Property id="IDOBJ_NAME" value="TestNameCN1" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameCN1" />
+            <Property id="CONNECTIVITYNODE_DESC" value="TestDescriptionCN1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="CONNECTIVITYNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CN_1425" />
+            <Property id="IDOBJ_NAME" value="TestNameCN2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameCN2" />
+            <Property id="CONNECTIVITYNODE_DESC" value="TestDescriptionCN2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="POWERTR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PWTR_1234" />
+            <Property id="IDOBJ_NAME" value="TestNamePWTR1" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNamePWTR1" />
+            <Property id="EQUIPMENT_AGGREGATE" value="0" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="1" />
+            <Property id="POWERTR_VECTORGROUP" value="TestVectorGroupPWTR1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="POWERTR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PWTR_12345" />
+            <Property id="IDOBJ_NAME" value="TestNamePWTR2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNamePWTR2" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="1" />
+            <Property id="POWERTR_VECTORGROUP" value="TestVectorGroupPWTR2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERM_2978" />
+            <Property id="IDOBJ_NAME" value="TestNameTERM1" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameTERM1" />
+            <Property id="TERMINAL_CONNECTED" value="0" />
+            <Property id="TERMINAL_PHASES" value="A" />
+            <Property id="TERMINAL_SEQNUM" value="14" />
+            <Property id="TERMINAL_CONDEQ" value="0x00000003ffffffff" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERM_297812" />
+            <Property id="IDOBJ_NAME" value="TestNameTERM2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameTERM2" />
+            <Property id="TERMINAL_CONNECTED" value="1" />
+            <Property id="TERMINAL_PHASES" value="A" />
+            <Property id="TERMINAL_SEQNUM" value="14" />
+            <Property id="TERMINAL_CONDEQ" value="0x00000003fffffffe" />
+            <Property id="TERMINAL_CONNECTIVITYNODE" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="RATIOTAPCHANGER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTPC_2348" />
+            <Property id="IDOBJ_NAME" value="TestNameRTPC1" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameRTPC1" />
+            <Property id="TAPCHANGER_HIGHSTEP" value="23" />
+            <Property id="TAPCHANGER_INITIALDELAY" value="2" />
+            <Property id="TAPCHANGER_LOWSTEP" value="5" />
+            <Property id="TAPCHANGER_LTCFLAG" value="0" />
+            <Property id="TAPCHANGER_NEUTRALSTEP" value="1" />
+            <Property id="TAPCHANGER_NEUTRALU" value="3" />
+            <Property id="TAPCHANGER_NORMALSTEP" value="8" />
+            <Property id="TAPCHANGER_REGULATIONSTATUS" value="1" />
+            <Property id="TAPCHANGER_SUBSEQUENTDELAY" value="14" />
+            <Property id="RATIOTAPCHANGER_STEPVOLTAGEINC" value="10" />
+            <Property id="RATIOTAPCHANGER_TCULCONTROLMODE" value="Volt" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="RATIOTAPCHANGER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTPC_2449" />
+            <Property id="IDOBJ_NAME" value="TestNameRTPC2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameRTPC2" />
+            <Property id="TAPCHANGER_HIGHSTEP" value="13" />
+            <Property id="TAPCHANGER_INITIALDELAY" value="12" />
+            <Property id="TAPCHANGER_LOWSTEP" value="15" />
+            <Property id="TAPCHANGER_LTCFLAG" value="0" />
+            <Property id="TAPCHANGER_NEUTRALSTEP" value="2" />
+            <Property id="TAPCHANGER_NEUTRALU" value="43" />
+            <Property id="TAPCHANGER_NORMALSTEP" value="18" />
+            <Property id="TAPCHANGER_REGULATIONSTATUS" value="1" />
+            <Property id="TAPCHANGER_SUBSEQUENTDELAY" value="14" />
+            <Property id="RATIOTAPCHANGER_STEPVOLTAGEINC" value="10" />
+            <Property id="RATIOTAPCHANGER_TCULCONTROLMODE" value="Reactive" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffd" type="RATIOTAPCHANGER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTPC_2459" />
+            <Property id="IDOBJ_NAME" value="TestNameRTPC3" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNameRTPC3" />
+            <Property id="TAPCHANGER_HIGHSTEP" value="13" />
+            <Property id="TAPCHANGER_INITIALDELAY" value="22" />
+            <Property id="TAPCHANGER_LOWSTEP" value="25" />
+            <Property id="TAPCHANGER_LTCFLAG" value="0" />
+            <Property id="TAPCHANGER_NEUTRALSTEP" value="3" />
+            <Property id="TAPCHANGER_NEUTRALU" value="23" />
+            <Property id="TAPCHANGER_NORMALSTEP" value="28" />
+            <Property id="TAPCHANGER_REGULATIONSTATUS" value="1" />
+            <Property id="TAPCHANGER_SUBSEQUENTDELAY" value="14" />
+            <Property id="RATIOTAPCHANGER_STEPVOLTAGEINC" value="10" />
+            <Property id="RATIOTAPCHANGER_TCULCONTROLMODE" value="Reactive" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="POWTREND" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PWTREND_1123" />
+            <Property id="IDOBJ_NAME" value="TestNamePWTREND1" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNamePWTREND1" />
+            <Property id="TRANSFORMEREND_RATIOTAPCHNG" value="0x00000005ffffffff" />
+            <Property id="TRANSFORMEREND_TERMINAL" value="0x00000002ffffffff" />
+            <Property id="POWTREND_POWTR" value="0x00000003ffffffff" />
+            <Property id="POWTREND_B" value="12" />
+            <Property id="POWTREND_B0" value="9" />
+            <Property id="POWTREND_G" value="14" />
+            <Property id="POWTREND_G0" value="24" />
+            <Property id="POWTREND_R" value="29" />
+            <Property id="POWTREND_R0" value="37" />
+            <Property id="POWTREND_X" value="17" />
+            <Property id="POWTREND_X0" value="23" />
+            <Property id="POWTREND_RATEDU" value="1" />
+            <Property id="POWTREND_RATEDS" value="48" />
+            <Property id="POWTREND_PHASEANGLCLOCK" value="29" />
+            <Property id="POWTREND_CONNKIND" value="3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="POWTREND" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PWTREND_1224" />
+            <Property id="IDOBJ_NAME" value="TestNamePWTREND2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNamePWTREND2" />
+            <Property id="TRANSFORMEREND_RATIOTAPCHNG" value="0x00000005fffffffd" />
+            <Property id="TRANSFORMEREND_TERMINAL" value="0x00000002fffffffe" />
+            <Property id="POWTREND_POWTR" value="0x00000003fffffffe" />
+            <Property id="POWTREND_B" value="12" />
+            <Property id="POWTREND_B0" value="19" />
+            <Property id="POWTREND_G" value="34" />
+            <Property id="POWTREND_G0" value="44" />
+            <Property id="POWTREND_R" value="19" />
+            <Property id="POWTREND_R0" value="27" />
+            <Property id="POWTREND_X" value="27" />
+            <Property id="POWTREND_X0" value="13" />
+            <Property id="POWTREND_RATEDU" value="3" />
+            <Property id="POWTREND_RATEDS" value="38" />
+            <Property id="POWTREND_PHASEANGLCLOCK" value="29" />
+            <Property id="POWTREND_CONNKIND" value="3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffd" type="POWTREND" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PWTREND_2224" />
+            <Property id="IDOBJ_NAME" value="TestNamePWTREND2" />
+            <Property id="IDOBJ_ALIASNAME" value="TestAliasNamePWTREND2" />
+            <Property id="TRANSFORMEREND_RATIOTAPCHNG" value="0x00000005fffffffe" />
+            <Property id="TRANSFORMEREND_TERMINAL" value="0x00000002fffffffe" />
+            <Property id="POWTREND_POWTR" value="0x00000003fffffffe" />
+            <Property id="POWTREND_B" value="12" />
+            <Property id="POWTREND_B0" value="19" />
+            <Property id="POWTREND_G" value="34" />
+            <Property id="POWTREND_G0" value="44" />
+            <Property id="POWTREND_R" value="19" />
+            <Property id="POWTREND_R0" value="27" />
+            <Property id="POWTREND_X" value="27" />
+            <Property id="POWTREND_X0" value="13" />
+            <Property id="POWTREND_RATEDU" value="3" />
+            <Property id="POWTREND_RATEDS" value="38" />
+            <Property id="POWTREND_PHASEANGLCLOCK" value="29" />
+            <Property id="POWTREND_CONNKIND" value="3" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>

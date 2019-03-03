@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15" xmlns:tdms="http://web.telventdms.com/CIM15/2010/extension#" xmlns:dong="http://web.telventdms.com/CIM15/DONG/extension#" xmlns:dm="http://iec.ch/2002/schema/CIM_difference_model#">
+	
+	<!-- 
+		README:	Patch Exampe 2 (patch_745633_extract_20130306120000-WO_000111.xml)
+		- affecting feeder VAT02
+		- changes are made inside the _Station.52032 (Substation rdf:ID="_Station.52032")
+		- example shows replacement of equipment 
+		- deleted equipment:
+			- Disconnector rdf:ID="_FaultInterrupter.154213"
+			- ACLineSegment rdf:ID="_BusBar.817481"
+			- related objects
+				(in total: 16 deletions)
+		- inserted equipment:
+			+ Disconnector rdf:ID="_FaultInterrupter.154299"
+			+ ACLineSegment rdf:ID="_BusBar.817499"
+			+ related objects
+				(in total: 16 inserts)
+		- updated:
+			~ connectivity around deleted/inserted equipment
+			~ property IdentifiedObject.description added for: PowerTransformer rdf:ID="_DistributionTransformer.254390" 
+			~ property Equipment.private removed from: TransformerWinding rdf:ID="_DistributionTransformer.254390.TW.1"
+				(in total: 5 updates)
+	-->
+		
+	<!-- feeder declaration is needed because it is being referenced from the <DifferenceModel.affectedFeeders> element -->
+	<cim:IdentifiedObject rdf:ID="_VAT02">
+		<cim:IdentifiedObject.mRID>VAT02</cim:IdentifiedObject.mRID>
+	</cim:IdentifiedObject>
+	
+	<dm:DifferenceModel>
+		<dm:Model.Ontology>
+			<cim:IEC61970CIMVersion>
+				<cim:IEC61970CIMVersion.version>CIM15v0</cim:IEC61970CIMVersion.version>
+				<cim:IEC61970CIMVersion.date>2010-09-15</cim:IEC61970CIMVersion.date>
+			</cim:IEC61970CIMVersion>
+		</dm:Model.Ontology>
+		<dm:Model.Version>
+			<dm:Description>
+				<dm:Description.name>Network Patch</dm:Description.name>
+				<dm:Description.alias>Patch_Extract</dm:Description.alias>
+				<dm:Description.description>Network Patch extract</dm:Description.description>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.Version>
+		<dm:Model.ModelingAuthoritySet>
+			<dm:Description>
+				<dm:Description.name>DONG Energy</dm:Description.name>
+				<dm:Description.alias>DONG</dm:Description.alias>
+			</dm:Description>
+		</dm:Model.ModelingAuthoritySet>
+		<dm:Model.Creator>
+			<dm:Description>
+				<dm:Description.name>J.D.</dm:Description.name>
+			</dm:Description>
+		</dm:Model.Creator>
+		<dm:Model.Profile>
+			<dm:Description>
+				<dm:Description.name>IEC 61970-552</dm:Description.name>
+				<dm:Description.description>Network Patch</dm:Description.description>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.Profile>
+		<dm:Model.ProfileDataGroup>
+			<dm:Description>
+				<dm:Description.name>Integration models</dm:Description.name>
+				<dm:Description.version>1</dm:Description.version>
+			</dm:Description>
+		</dm:Model.ProfileDataGroup>
+		
+		<!-- list of affected feeders: -->
+		<dong:DifferenceModel.affectedFeeders rdf:resource="_VAT02"/>
+		<!-- can declare more than one affected feeders, e.g.:
+		<dong:DifferenceModel.affectedFeeders rdf:resource="_VAT07"/>
+		<dong:DifferenceModel.affectedFeeders rdf:resource="_VAT30"/> -->
+		
+		<dong:DifferenceModel.patchID>745633</dong:DifferenceModel.patchID>
+		<dong:DifferenceModel.woNumber>000111</dong:DifferenceModel.woNumber>
+		<dong:DifferenceModel.username>JDOE</dong:DifferenceModel.username>
+		<dong:DifferenceModel.title>Patch Example: replacement of equipment</dong:DifferenceModel.title>
+		
+		<dm:Model.created>2013-03-06</dm:Model.created>
+		
+		<dm:reverseDifferences parseType="Statements">
+			<!-- list of DELETED objects -->
+			<cim:Location rdf:ID="_FaultInterrupter.154213.L"/>
+			<cim:CoordinateSystem rdf:ID="_FaultInterrupter.154213.L.CS"/>
+			<cim:PositionPoint rdf:ID="_FaultInterrupter.154213.L.CS.PP.1"/>
+			<cim:Disconnector rdf:ID="_FaultInterrupter.154213"/>
+			<cim:Terminal rdf:ID="_FaultInterrupter.154213.T.2"/>
+			<cim:Terminal rdf:ID="_FaultInterrupter.154213.T.1"/>
+			<cim:Location rdf:ID="_BusBar.817481.L"/>
+			<cim:ACLineSegment rdf:ID="_BusBar.817481"/>
+			<cim:Terminal rdf:ID="_BusBar.817481.T.2"/>
+			<cim:Terminal rdf:ID="_BusBar.817481.T.1"/>
+			<cim:CoordinateSystem rdf:ID="_BusBar.817481.L.CS"/>
+			<cim:PositionPoint rdf:ID="_BusBar.817481.L.CS.PP.2"/>
+			<cim:PositionPoint rdf:ID="_BusBar.817481.L.CS.PP.1"/>
+			<cim:ConnectivityNode rdf:ID="_Node.FaultInterrupter.154213_BusBar.841328"/>
+			<cim:ConnectivityNode rdf:ID="_Node.FaultInterrupter.154213_BusBar.817481"/>
+			<cim:ConnectivityNode rdf:ID="_Node.DistributionTransformer.254390_BusBar.817481"/>
+	
+			<!-- UPDATED object properties (declaring previous value) -->
+			<rdf:Description rdf:about="_BusBar.841328.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.FaultInterrupter.154213_BusBar.841328"/>
+			</rdf:Description>
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.1.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.DistributionTransformer.254390_BusBar.817481"/>
+			</rdf:Description>
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.2">
+				<cim:TransformerWinding.tapPercent>3</cim:TransformerWinding.tapPercent>
+			</rdf:Description>
+			<!-- UPDATE example of defining new property for object (previous value is: No property definition) -->
+			<rdf:Description rdf:about="_DistributionTransformer.254390"/>
+			<!-- UPDATE example of removing property from object (previous value is given) -->
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.1">
+				<dong:Equipment.private>true</dong:Equipment.private>
+			</rdf:Description>
+		</dm:reverseDifferences>
+		
+		<dm:forwardDifferences parseType="Statements">
+			<!-- UPDATED object properties declaring new values -->
+			<rdf:Description rdf:about="_BusBar.841328.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.FaultInterrupter.154299_BusBar.841328"/>
+			</rdf:Description>
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.1.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.DistributionTransformer.254390_BusBar.817499"/>
+			</rdf:Description>
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.2">
+				<cim:TransformerWinding.tapPercent>5</cim:TransformerWinding.tapPercent>
+			</rdf:Description>
+			<!-- UPDATE example of defining new property for object-->
+			<rdf:Description rdf:about="_DistributionTransformer.254390">
+				<cim:IdentifiedObject.description>example of adding new property</cim:IdentifiedObject.description>
+			</rdf:Description>
+			<!-- UPDATE example of removing property from object (new value is: No property definition) -->
+			<rdf:Description rdf:about="_DistributionTransformer.254390.TW.1"/>
+			
+			<!-- list of INSERTED objects -->
+			<cim:Terminal rdf:ID="_FaultInterrupter.154299.T.2">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.FaultInterrupter.154299_BusBar.817499"/>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_FaultInterrupter.154299"/>
+				<cim:IdentifiedObject.mRID>FaultInterrupter.154299.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:Terminal rdf:ID="_FaultInterrupter.154299.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.FaultInterrupter.154299_BusBar.841328"/>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_FaultInterrupter.154299"/>
+				<cim:IdentifiedObject.mRID>FaultInterrupter.154299.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:Disconnector rdf:ID="_FaultInterrupter.154299">
+				<dong:IdentifiedObject.name>52032-T1</dong:IdentifiedObject.name>
+				<cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.52032"/>
+				<cim:IdentifiedObject.description>52032:1</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>FaultInterrupter.154299</cim:IdentifiedObject.mRID>
+				<cim:PowerSystemResource.Location rdf:resource="#_FaultInterrupter.154299.L"/>
+				<dong:Equipment.private>true</dong:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>FAULTINTERRUPTER_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:ConductingEquipment.numberOfPhases>3</cim:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:Switch.feederID1>VAT02</tdms:Switch.feederID1>
+				<tdms:Disconnector.ratedCurrent>300</tdms:Disconnector.ratedCurrent>
+				<dong:Switch.switchType>UKENDT</dong:Switch.switchType>
+			</cim:Disconnector>
+			<cim:ConnectivityNode rdf:ID="_Node.FaultInterrupter.154299_BusBar.841328">
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.52032"/>
+				<cim:IdentifiedObject.mRID>Node.FaultInterrupter.154299_BusBar.841328</cim:IdentifiedObject.mRID>
+			</cim:ConnectivityNode>
+			<cim:Location rdf:ID="_FaultInterrupter.154299.L">
+				<cim:IdentifiedObject.mRID>FaultInterrupter.154299.L</cim:IdentifiedObject.mRID>
+			</cim:Location>
+			<cim:CoordinateSystem rdf:ID="_FaultInterrupter.154299.L.CS">
+				<cim:CoordinateSystem.Location rdf:resource="#_FaultInterrupter.154299.L"/>
+				<cim:CoordinateSystem.name>EPSG:29900</cim:CoordinateSystem.name>
+			</cim:CoordinateSystem>
+			<cim:PositionPoint rdf:ID="_FaultInterrupter.154299.L.CS.PP.1">
+				<cim:PositionPoint.sequenceNumber>0</cim:PositionPoint.sequenceNumber>
+				<dong:PositionPoint.rotationAngle>0</dong:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>721612.32078207971</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6173729.8859754717</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_FaultInterrupter.154299.L.CS"/>
+			</cim:PositionPoint>
+			<cim:Terminal rdf:ID="_BusBar.817499.T.1">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.FaultInterrupter.154299_BusBar.817499"/>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.817499"/>
+				<cim:IdentifiedObject.mRID>BusBar.817499.T.1</cim:IdentifiedObject.mRID>
+				<cim:Terminal.sequenceNumber>1</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:Terminal rdf:ID="_BusBar.817499.T.2">
+				<cim:Terminal.ConnectivityNode rdf:resource="#_Node.DistributionTransformer.254390_BusBar.817499"/>
+				<cim:Terminal.ConductingEquipment rdf:resource="#_BusBar.817499"/>
+				<cim:IdentifiedObject.mRID>BusBar.817499.T.2</cim:IdentifiedObject.mRID>
+				<cim:Terminal.sequenceNumber>2</cim:Terminal.sequenceNumber>
+			</cim:Terminal>
+			<cim:ACLineSegment rdf:ID="_BusBar.817499">
+				<dong:IdentifiedObject.name>52032:1</dong:IdentifiedObject.name>
+				<cim:Equipment.EquipmentContainer rdf:resource="#_Station.52032"/>
+				<cim:IdentifiedObject.description>52032:1</cim:IdentifiedObject.description>
+				<cim:IdentifiedObject.mRID>BusBar.817499</cim:IdentifiedObject.mRID>
+				<cim:PowerSystemResource.Location rdf:resource="#_BusBar.817499.L"/>
+				<dong:Equipment.private>true</dong:Equipment.private>
+				<dong:Equipment.standardTypeLibrary>CABLE_CATALOG</dong:Equipment.standardTypeLibrary>
+				<cim:ConductingEquipment.numberOfPhases>3</cim:ConductingEquipment.numberOfPhases>
+				<cim:ConductingEquipment.phases>ABC</cim:ConductingEquipment.phases>
+				<cim:ConductingEquipment.BaseVoltage rdf:resource="#_BV.12000"/>
+				<tdms:ConductingEquipment.ratedVoltage>12000</tdms:ConductingEquipment.ratedVoltage>
+				<cim:Conductor.length>0.252176255</cim:Conductor.length>
+				<tdms:ACLineSegment.conductorType>Cable</tdms:ACLineSegment.conductorType>
+				<tdms:Conductor.conductorMaterial>copper</tdms:Conductor.conductorMaterial>
+				<tdms:ACLineSegment.neutral>false</tdms:ACLineSegment.neutral>
+			</cim:ACLineSegment>
+			<cim:ConnectivityNode rdf:ID="_Node.FaultInterrupter.154299_BusBar.817499">
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.52032"/>
+				<cim:IdentifiedObject.mRID>Node.FaultInterrupter.154299_BusBar.817499</cim:IdentifiedObject.mRID>
+			</cim:ConnectivityNode>
+			<cim:ConnectivityNode rdf:ID="_Node.DistributionTransformer.254390_BusBar.817499">
+				<cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="#_Station.52032"/>
+				<cim:IdentifiedObject.mRID>Node.DistributionTransformer.254390_BusBar.817499</cim:IdentifiedObject.mRID>
+			</cim:ConnectivityNode>
+			<cim:Location rdf:ID="_BusBar.817499.L">
+				<cim:IdentifiedObject.mRID>BusBar.817499.L</cim:IdentifiedObject.mRID>
+			</cim:Location>
+			<cim:CoordinateSystem rdf:ID="_BusBar.817499.L.CS">
+				<cim:CoordinateSystem.Location rdf:resource="#_BusBar.817499.L"/>
+				<cim:CoordinateSystem.name>EPSG:29900</cim:CoordinateSystem.name>
+			</cim:CoordinateSystem>
+			<cim:PositionPoint rdf:ID="PP_634981668866142727">
+				<cim:PositionPoint.sequenceNumber>0</cim:PositionPoint.sequenceNumber>
+				<dong:PositionPoint.rotationAngle>0</dong:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>721612.32078207971</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6173729.8859754717</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_BusBar.817499.L.CS"/>
+			</cim:PositionPoint>
+			<cim:PositionPoint rdf:ID="PP_634981669418342727">
+				<cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+				<dong:PositionPoint.rotationAngle>0</dong:PositionPoint.rotationAngle>
+				<cim:PositionPoint.xPosition>721612.07220277085</cim:PositionPoint.xPosition>
+				<cim:PositionPoint.yPosition>6173729.843535102</cim:PositionPoint.yPosition>
+				<cim:PositionPoint.CoordinateSystem rdf:resource="#_BusBar.817499.L.CS"/>
+			</cim:PositionPoint>
+		</dm:forwardDifferences>
+		
+	</dm:DifferenceModel>
+</rdf:RDF>

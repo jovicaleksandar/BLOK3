@@ -1,0 +1,11 @@
+"Use_Config","Ignore_Type"
+TRUE,
+TRUE,"Analog"
+TRUE,"ApparentPowerLimit"
+TRUE,"ConformLoadGroup"
+TRUE,"Discrete"
+TRUE,"IEC61970CIMVersion"
+TRUE,"LoadArea"
+TRUE,"OperationalLimitSet"
+TRUE,"SubLoadArea"
+TRUE,"VoltageLimit"
